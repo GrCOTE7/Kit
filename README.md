@@ -6,6 +6,8 @@ Push / Pypi uniquement si new version, même patch...
 
 New GH → 4.0.1 ?
 
+❌ GH_tk après GH
+
 Trousse à outils utiles pour devs en PyMoX
 
 ---
