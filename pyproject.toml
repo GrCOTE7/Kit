@@ -28,7 +28,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.semantic_release]
 tag_format = "v{version}"
-version_variable = "src/pymox_tools/__init__.py:__version__"
+version_variable = "src/kit/__init__.py:__version__"
 repository = "https://github.com/GrCOTE7/Kit"
 hvcs = "github"
 github_token = "env:GH_TOKEN"
@@ -59,7 +59,7 @@ upload_to_pypi = true       # active la publication sur PyPI
 
 [tool.setuptools]
 package-dir = { "" = "src" }
-packages = ["pymox_tools"]           # dossier Python
+packages = ["kit"]           # dossier Python
 
 [tool.setuptools.package-data]
 "*" = ["*.txt", "*.json"] # si tu as des fichiers à inclure
