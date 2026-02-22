@@ -4,6 +4,8 @@
 
 Push / Pypi uniquement si new version, même patch...
 
+New GH
+
 Trousse à outils utiles pour devs en PyMoX
 
 ---
