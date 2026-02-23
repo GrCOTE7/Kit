@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v5.0.2 (2026-02-23)
+
+### Bug Fixes
+
+- Try without dev 4 pypi
+  ([`2f31ba9`](https://github.com/GrCOTE7/Kit/commit/2f31ba97e916d0e048d01e30c0c1956edd876942))
+
+
 ## v5.0.1 (2026-02-23)
 
 ### Bug Fixes
