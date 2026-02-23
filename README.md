@@ -4,7 +4,7 @@
 
 Push / Pypi uniquement si new version, même patch...
 
-New GH → 5.0.1 ?
+New TK2
 
 ❌ GH_tk après GH
 
