@@ -17,7 +17,7 @@ dependencies = [
   # Ajoute ici tes dépendances, ex:
   # "requests >=2.0.0"
   "python-dotenv",
-  "setuptools_scm"
+  "setuptools_scm",
 ]
 requires-python = ">=3.10"
 
@@ -46,7 +46,7 @@ verify_release_commit = true
 # commit_version_number = true
 # commit_message = "chore(release): version {version}"
 
-branch = "main"                # branch de travail
+branch = "main" # branch de travail
 # commit_parser = "conventional" # essayer emoji
 # commit_parser = "semantic_release.commit_parser.emoji:parse_commit_message:"
 
