@@ -4,7 +4,7 @@
 
 Push / Pypi uniquement si new version, même patch...
 
-New GH → 4.0.1 ?
+New GH → 5.0.1 ?
 
 ❌ GH_tk après GH
 
@@ -31,6 +31,8 @@ pip install -e .
 py -m build
 twine check dist/*
 twine upload dist/* --verbose
+
+twine upload dist/* -u __token__ -p pypi-pypi-AgEIcHlwaS5vcmcCJDc0ZmY4NWVmLTk0ZjgtNGI5NS05ZmM3LWIyN2M2OTMwMGY0OQACKlszLCJlOGU2N2YxNy1hMWYyLTQ3YjMtOTUzMC00ZDE1YTM2M2YwOWYiXQAABiBWCOyR8YbuSSuyW_untgjDXeG10j7VBBqDAFxiSe_etw
 
 git log --oneline
 
