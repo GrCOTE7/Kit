@@ -19,7 +19,7 @@ dependencies = [
   "python-dotenv",
   "setuptools_scm",
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 
 [build-system]
 requires = ["setuptools>=77.0.0", "setuptools_scm", "wheel"]
