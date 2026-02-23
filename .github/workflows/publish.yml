@@ -75,14 +75,22 @@ jobs:
         if: steps.release-detect.outputs.release == 'true'
         run: git checkout "${{ steps.tag-after.outputs.tag_after }}"
 
+      - name: Derive package version from tag
+        if: steps.release-detect.outputs.release == 'true'
+        id: pkg-version
+        run: |
+          tag="${{ steps.tag-after.outputs.tag_after }}"
+          version="${tag#v}"
+          echo "package_version=$version" >> "$GITHUB_OUTPUT"
+
       - name: Clean dist folder
         if: steps.release-detect.outputs.release == 'true'
         run: rm -rf dist/
 
       - name: Build the package
         if: steps.release-detect.outputs.release == 'true'
-        # env:
-        #   SETUPTOOLS_SCM_PRETEND_VERSION: ${{ steps.get_tag.outputs.tag }}
+        env:
+          SETUPTOOLS_SCM_PRETEND_VERSION: ${{ steps.pkg-version.outputs.package_version }}
         run: python -m build
 
       - name: Publish to PyPI
