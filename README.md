@@ -1,6 +1,6 @@
 # PyMoX-Tools (Public)
 
-❌ Nett requirements 777
+❌ Nett requirements
 
 Push / Pypi uniquement si new version, même patch...
 
